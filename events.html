@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Events</title>
+    </head>
+<body>
+    <header>
+        <a href="#main-content">Skip to main content</a>
+        <h1 id="top-of-page">RIVERBEND YOGA STUDIO</h1>
+            <h2>Navigation</h2>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html" aria-current="page">Events</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main id="main-content">
+        <section>
+            <h2>Monthly Special Events</h2>
+                <ul>
+                    <li>Quarter 1: Intention & Grounding
+                        <ul>
+                            <li>January: The Art of Sankalpa (Intention Setting & Yoga Nidra)
+                                <ul>
+                                    <li>Workshop replacing stressful New Year's resolutions with deep relaxation and mindful intention-setting.</li>
+                                </ul>
+                            </li>
+                            <li>February: Heart-Opening Flow & Cacao Ceremony
+                                <ul>
+                                    <li>Community-focused, gentle back-bending practice to increase thoracic mobility and cultivate self-compassion.</li>
+                                </ul>
+                            </li>
+                            <li>March: Spring Equinox Detox & Twist Intensive
+                                <ul>
+                                    <li>Dynamic Vinyasa workshop focusing on twisting postures and breathwork to welcome the changing season and build heat.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Quarter 2: Growth & Alignment
+                        <ul>
+                            <li>April: Foundations of Flight (Arm Balances for Beginners)
+                                <ul>
+                                    <li>Workshop breaking down core engagement, wrist prep, and weight distribution to confidently try poses like Crow and Side Plank.</li>
+                                </ul>
+                            </li>
+                            <li>May: Stress Reset (Myofascial Release & Deep Stretch)
+                                <ul>
+                                    <li>Therapeutic class using tennis or massage balls to target tight fascia, relieve chronic tension, and open up the hips and shoulders.</li>
+                                </ul>
+                            </li>
+                            <li>June: Summer Solstice 108 Sun Salutations
+                                <ul>
+                                    <li>Powerful, meditative, community-driven event to mark the longest day of the year through repetitive movement.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Quarter 3: Exploration & Play
+                        <ul>
+                            <li>July: Outdoor Park Flow & Sound Bath
+                                <ul>
+                                    <li>Connection-centered event combining an accessible outdoor morning flow with a deeply relaxing crystal singing bowl sound bath.</li>
+                                </ul>
+                            </li>
+                            <li>August: Unshakable Balance (Inversions & Core Stability)
+                                <ul>
+                                    <li>Playful session focusing on headstands, forearm stands, or wall-supported handstands to build full-body strength and overcome fear.</li>
+                                </ul>
+                            </li>
+                            <li>September: Autumn Equinox Slow Down (Yin & Journaling)
+                                <ul>
+                                    <li>Calming workshop designed to slow down the nervous system through longer-held floor postures, paired with reflective journaling.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Quarter 4: Restoration & Reflection
+                        <ul>
+                            <li>October: Breath as Medicine (Pranayama & Meditation Masterclass)
+                                <ul>
+                                    <li>Deep dive into traditional yogic breathing techniques to manage anxiety, increase lung capacity, and sharpen mental clarity.</li>
+                                </ul>
+                            </li>
+                            <li>November: Radical Rest (Trauma-Informed Restorative Yoga)
+                                <ul>
+                                    <li>Deeply comforting, quiet workshop using maximum props to completely support the physical body during a stressful holiday season.</li>
+                                </ul>
+                            </li>
+                            <li>December: Winter Solstice Candlelight Renewal
+                                <ul>
+                                    <li>Quiet, cozy evening of candlelit gentle movement, live soft music or sound bowls, and guided meditation to honor the shortest day of the year.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </section>
+        <figure>
+                <img 
+                    src="/media/yoga-workshop_c.png"
+                    alt="Diverse and content participants being led by an instructor"
+                    width="600"
+                    height="400">
+                        <figcaption>Inclusive To All</figcaption>
+        </figure>
+        <form action="/reservation-requests/" method="post">
+            <fieldset>
+                <legend>Request A Spot</legend>
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                                <label for="first-name">First Name:
+                                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                                </label>
+                                <label for="last-name">Last Name:
+                                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                                </label>
+                                <label for="e-mail">E-Mail:
+                                    <input type="email" name="e-mail" id="e-mail" placeholder="Email Address" required>
+                                </label>
+                                <label for="phone-number">Phone Number:
+                                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+                                </label>
+                                <label for="preferred-contact-method">Preferred Contact Method:
+                                    <select name="contact-method" id="preferred-contact-method" required>
+                                        <option value="">--Select--</option>
+                                        <option value="email">Email</option>
+                                        <option value="phone">Phone</option>
+                                    </select>
+                                </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Interested Events</legend>
+                                    <label for="experience-level">Experience Level:
+                                        <select name="experience-level" id="experience-level" required>
+                                            <option value="">--Select--</option>
+                                            <option value="Beginner">Beginner</option>
+                                            <option value="Intermediate">Intermediate</option>
+                                            <option value="Expert">Expert</option>
+                                        </select>
+                                    </label>
+                                <p>Date And Time of Each Monthly Event Will Be Sent Out On The First Of Every Month.</p>
+                                    <label for="january-the-art-of-sankalpa">
+                                        <input type="checkbox" id="january-the-art-of-sankalpa" value="January">January: The Art of Sankalpa (Intention Setting & Yoga Nidra)
+                                    </label>
+                                    <label for="february-heart-opening-flow-and-cacao-ceremony">
+                                        <input type="checkbox" id="february-heart-opening-flow-and-cacao-ceremony" value="february">February: Heart-Opening Flow & Cacao Ceremony
+                                    </label>
+                                    <label for="march-spring-equinox-detox-and-twist-intensive">
+                                        <input type="checkbox" id="march-spring-equinox-detox-and-twist-intensive" value="March">March: Spring Equinox Detox & Twist Intensive
+                                    </label>
+                                    <label for="april-foundations-of-flight">
+                                        <input type="checkbox" id="april-foundations-of-flight" value="April">April: Foundations of Flight (Arm Balances for Beginners)
+                                    </label>
+                                    <label for="may-stress-reset">
+                                        <input type="checkbox" id="may-stress-reset" value="May">May: Stress Reset (Myofascial Release & Deep Stretch)
+                                    </label>
+                                    <label for="june-summer-solstice-108-sun-salutations">
+                                        <input type="checkbox" id="june-summer-solstice-108-sun-salutations" value="June">June: Summer Solstice 108 Sun Salutations
+                                    </label>
+                                    <label for="july-outdoor-park-flow-and-sound-bath">
+                                        <input type="checkbox" id="july-outdoor-park-flow-and-sound-bath" value="July">July: Outdoor Park Flow & Sound Bath
+                                    </label>
+                                    <label for="august-unshakable-balance">
+                                        <input type="checkbox" id="august-unshakable-balance" value="August">August: Unshakable Balance (Inversions & Core Stability)
+                                    </label>
+                                    <label for="september-autumn-equinox-slow-down">
+                                        <input type="checkbox" id="september-autumn-equinox-slow-down" value="September">September: Autumn Equinox Slow Down (Yin & Journaling)
+                                    </label>
+                                    <label for="october-breath-as-medicine">
+                                        <input type="checkbox" id="october-breath-as-medicine" value="October">October: Breath as Medicine (Pranayama & Meditation Masterclass)
+                                    </label>
+                                    <label for="november-radical-rest">
+                                        <input type="checkbox" id="november-radical-rest" value="November">November: Radical Rest (Trauma-Informed Restorative Yoga)
+                                    </label>
+                                    <label for="december-winter-solstice-candlelight-renewal">
+                                        <input type="checkbox" id="december-winter-solstice-candlelight-renewal" value="December">December: Winter Solstice Candlelight Renewal
+                                    </label>
+                                </fieldset>
+                            <button type="Submit" name="send-request">Send Request</button>          
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h2>Footer Navigation</h2>
+            <nav aria-label="Footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html" aria-current="page">Events</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+                <figure>
+                    <img 
+                        src="/media/yoga-logo_c.png"
+                        alt="Company Logo"
+                        width="150"
+                        height="100">    
+                </figure>
+            <p>&copy; 2026 Riverbend Yoga Studio</p>
+        <a href="#top-of-page" aria-label="Footer">Jump to Top</a>
+    </footer>
+</body>
+</html>
