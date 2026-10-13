@@ -2,85 +2,115 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="perfect.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Services</title>
     </head>
 <body>
     <header>
-        <a href="#main-content">Skip to main content</a>
-        <h1 id="top-of-page">RIVERBEND YOGA STUDIO</h1>
-            <h2>Navigation</h2>
+        <a href="#main-content" class="skip">Skip to main content</a>
+                    <figure>
+                        <img class="img"
+                            src="/media/yoga-logo_c.png"
+                            alt="Company Logo"
+                            width="150"
+                            height="100">    
+                    </figure>
+            <h2 id="top-of-page">Navigation</h2>
                 <nav aria-label="Primary">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="events.html">Events</a></li>
-                        <li><a href="services.html" aria-current="page">Services</a></li>
+                        <li><a href="services.html" aria-current="page" class="active">Services</a></li>
                     </ul>
                 </nav>
     </header>
     <main id="main-content">
         <section>
+            <h1>RIVERBEND YOGA STUDIO</h1>
+        </section>
+        <section>
+            <div class="grid-container">
+                <div class="card">
             <h2>Variety Of Classes Offered</h2>
                 <ul>
-                    <li>Vinyasa & Flow (Dynamic Movement)
-                        <ul>
-                            <li>Rise & Shine Vinyasa: A morning practice combining smooth movements and deep breaths to naturally wake up your body and sharpen your focus.</li>
-                            <li>Ignite: Core & Flow: A fast-paced, uplifting class focusing on building full-body core strength, improving balance, and cultivating physical stamina.</li>
-                            <li>Weekend Community Flow: An accessible, playful, all-levels class designed to celebrate collective movement and connect with fellow students.</li>
-                        </ul>
-                    </li>
-                    <li>Hatha & Alignment (Foundations & Pace)
-                        <ul>
-                            <li> Gentle Hatha Yoga: A slower, intentional practice that breaks down foundational alignments, making it perfect for total beginners or anyone wanting a mindful, steady pace.</li>
-                        </ul>
-                    </li>
-                    <li>Restorative & Yin (Deep Relaxation)
-                        <ul>
-                            <li>The Reset: Deep Stretch: A quiet, low-intensity class where you hold gentle floor poses supported by props to melt away tight muscle tissue and calm a busy nervous system.</li>
-                        </ul>
-                    </li>
+                    <hgroup>
+                        <li><h3>Vinyasa & Flow (Dynamic Movement)</h3>
+                            <ul>
+                                <li class="bold">Rise & Shine Vinyasa
+                                    <p>- A morning practice combining smooth movements and deep breaths to naturally wake up your body and sharpen your focus.</p>
+                                <li class="bold">Ignite Your Core
+                                    <p>- A fast-paced, uplifting class focusing on building full-body core strength, improving balance, and cultivating physical stamina.</p>
+                                <li class="bold">Weekend Community Flow
+                                    <p>- An accessible, playful, all-levels class designed to celebrate collective movement and connect with fellow students.</p>
+                            </ul>
+                        </li>
+                    </hgroup>
+                    <hgroup>
+                        <li><h3>Hatha & Alignment (Foundations & Pace)</h3>
+                            <ul>
+                                <li class="bold">Gentle Hatha Yoga
+                                    <p>- A slower, intentional practice that breaks down foundational alignments, making it perfect for total beginners or anyone wanting a mindful, steady pace.</p>
+                            </ul>
+                        </li>
+                    </hgroup>
+                    <hgroup>
+                        <li><h3>Restorative & Yin (Deep Relaxation)</h3>
+                            <ul>
+                                <li class="bold">The Reset & Deep Stretch
+                                    <p>- A quiet, low-intensity class where you hold gentle floor poses supported by props to melt away tight muscle tissue and calm a busy nervous system.</p>
+                            </ul>
+                        </li>
+                    </hgroup>
                 </ul>
             <figure>
+                <figcaption><h4>Enough room for any that come</h4></figcaption>
                 <img 
                     src="/media/yoga-studio_c.png"
                     alt="Photo of one of our many spacious studio rooms"
                     width="600"
                     height="400">
-                <figcaption>Enough room for any that come</figcaption>
             </figure>
         </section>
         <section>
-            <h2>Elevate Your Practice: Private Yoga Sessions</h2>
+            <div class="grid-container">
+                <div class="card">
+            <h2>Elevate Your Practice</h2>
+            <hgroup>
+                <h3>Private Yoga Sessions</h3>
                 <p>Whether you are completely new to the mat, managing an injury, or looking to deepen your existing practice, our 1-on-1 private sessions are fully tailored to your unique goals. You will work directly with an expert instructor in a quiet, private setting to break down foundational alignments, build custom flows, and move at the exact pace your body needs. Fill out the request form below to schedule your personalized session.</p>
-        </section>
+            </hgroup>
+    
         <form action="/private-session-requests/" method="post">
             <fieldset>
-                <legend>Private Session Inquiry</legend>
-                    <fieldset>
-                        <legend>Contact Info</legend>  
-                            <label for="first-name">First Name:
-                                <input id="first-name" type="text" name="first-name" placeholder="First Name" required>
-                            </label>
-                            <label for="last-name" >Last Name:
-                                <input id="last-name" type="text" name="last-name" placeholder="Last Name" required>
-                            </label>
-                            <label for="e-mail" >Email:
-                                <input id="e-mail" type="email" name="email-address" placeholder="Email Address" required>
-                            </label>
-                            <label for="phone-number" >Phone Number:
-                                <input id="phone-number" type="tel" name="phone-number" placeholder="Phone Number" required>
-                            </label>
-                            <label for="contact-method" >Preferred Contact method:
-                                <select id="contact-method" name="preferred-contact-method" required>
-                                    <option value="">--Select--</option>
-                                    <option value="email">Email</option>
-                                    <option value="phone">Phone</option>
-                                </select>
-                            </label>
-                </fieldset>
+                    <hgroup>
+                        <fieldset>
+                            <legend class="sub-form-header">Contact Info</legend>  
+                                <label for="first-name">First Name:
+                                    <input id="first-name" type="text" name="first-name" placeholder="First Name" required>
+                                </label>
+                                <label for="last-name" >Last Name:
+                                    <input id="last-name" type="text" name="last-name" placeholder="Last Name" required>
+                                </label>
+                                <label for="e-mail" >Email:
+                                    <input id="e-mail" type="email" name="email-address" placeholder="Email Address" required>
+                                </label>
+                                <label for="phone-number" >Phone Number:
+                                    <input id="phone-number" type="tel" name="phone-number" placeholder="Phone Number" required>
+                                </label>
+                                <label for="contact-method" >Preferred Contact method:
+                                    <select id="contact-method" name="preferred-contact-method" required>
+                                        <option value="">--Select--</option>
+                                        <option value="email">Email</option>
+                                        <option value="phone">Phone</option>
+                                    </select>
+                                </label>
+                        </fieldset>
+                    </hgroup>
+                    <hgroup>
                 <fieldset>
-                    <legend>Appointment Booking</legend>
+                    <legend class="sub-form-header">Appointment Booking</legend>
                         <label for="instructor" >Instructor:
                             <select id="instructor" name="instructor" required>
                                 <option value="">-- Select an Instructor --</option>
@@ -134,40 +164,60 @@
                                         placeholder="A Short Description Of What You Want To Accomplish...">
                                     </textarea>
                                 </label>
-                            <button type="submit">Request Availablity</button>
-                </fieldset>
+                            <button class="btn" type="submit">Request Availablity</button>
+                    </fieldset>
+                </hgroup>
             </fieldset>
         </form>
+    </hgroup>
+        </section>
         <section>
+             <div class="grid-container">
+                <div class="card">
             <h2>Riverbend Yoga Studio Pricing</h2>
                 <ul>
-                    <li>Regular Classes
-                        <ul>
-                            <li>Single Drop-In Pass: $22 (Best for first-time visitors and travelers)</li>
-                            <li>10 Class Pack: $180 ($18 per class / valid for 6 months)</li>
-                            <li>Monthly Unlimited Membership: $135/month (Best for attending 2+ classes a week / auto-renews monthly)</li>
-                        </ul>
-                    </li>
-                    <li>Workshops & Special Events
-                        <ul>
-                            <li>Single Workshop Investment: $35 - $45 (Deep dives, sound baths, and seasonal solstice events)</li>
-                            <li>6 - Workshop Pack: $195 ($32.50 per workshop | Saves up to $75 | Valid for 12 months)</li>
-                            <li>12 - Workshops Pack: Guaranteed entry into one curated seasonal workshop every single month (valued at up to $540 if purchased separately)</li>
-                        </ul>
-                    </li>
-                    <li>Special Incentives
-                        <ul>
-                            <li>The Newcomer Special: 2 weeks of unlimited regular classes for $30 (Available on your first visit only)</li>
-                            <li>Member Perk: Monthly Unlimited members save 10% on all weekend workshops and retail store items</li>
-                        </ul>
-                    </li>
-                    <li>Private 1-on-1 Sessions
-                        <ul>
-                            <li>Single 60 Minute Session: $85 (Fully tailored alignment and personalized goals)</li>
-                            <li>Session Welcome Pack: $225 ($75 per session / exclusive for new private clients)</li>
-                            <li>Semi Private Add-On: Bring a friend or partner to any private session for an extra $25</li>
-                        </ul>
-                    </li>
+                    <hgroup>
+                        <li><h3>Regular Classes</h3>
+                            <ul>
+                                <li class="bold">Single Drop-In Pass
+                                    <p>- $22 (Best for first-time visitors and travelers)</p>
+                                <li class="bold">10 Class Pack
+                                    <p>- $180 ($18 per class / valid for 6 months)</p>
+                                <li class="bold">Monthly Unlimited Membership
+                                    <p>- $135/month (Best for attending 2+ classes a week / auto-renews monthly)</p>
+                            </ul>
+                        </li>
+                    </hgroup>
+                    <hgroup>
+                        <li><h3>Workshops & Special Events</h3>
+                            <ul>
+                                <li class="bold">Single Workshop Investment
+                                    <p>- $35 - $45 (Deep dives, sound baths, and seasonal solstice events)</P>
+                                <li class="bold">Six Workshop Package
+                                    <p>- $195 ($32.50 per workshop | Saves up to $75 | Valid for 12 months)</P>
+                            </ul>
+                        </li>
+                    </hgroup>
+                    <hgroup>
+                        <li><h3>Special Incentives</h3>
+                            <ul>
+                                <li class="bold">The Newcomer Special
+                                    <p>- 2 weeks of unlimited regular classes for $30 (Available on your first visit only)</P>
+                                <li class="bold">Member Perk
+                                    <p>- Monthly Unlimited members save 10% on all weekend workshops and retail store items</P>
+                            </ul>
+                        </li>
+                    </hgroup>
+                    <hgroup>
+                        <li><h3>Private 1-on-1 Sessions</h3>
+                            <ul>
+                                <li class="bold">Single 60 Minute Session
+                                    <p>- $85 (Fully tailored alignment and personalized goals)</P>
+                                <li class="bold">Semi Private Add-On
+                                    <p>- Bring a friend or partner to any private session for an extra $25</P>
+                            </ul>
+                        </li>
+                    </hgroup>
                 </ul>
         </section>
     </main>
@@ -178,11 +228,11 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="services.html" aria-current="page">Services</a></li>
+                    <li><a href="services.html" aria-current="page" class="active">Services</a></li>
                 </ul>
             </nav>
                 <figure>
-                    <img 
+                    <img class="img"
                         src="/media/yoga-logo_c.png"
                         alt="Company Logo"
                         width="150"

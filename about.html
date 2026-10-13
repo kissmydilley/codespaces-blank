@@ -2,18 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="perfect.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
     </head>
 <body>
     <header>
-        <a href="#main-content">Skip to main content</a>
-        <h1 id="top-of-page">RIVERBEND YOGA STUDIO</h1>
-        <h2>Navigation</h2>
+        <a href="#main-content" class="skip">Skip to main content</a>
+        <figure>
+                        <img class="img"
+                            src="/media/yoga-logo_c.png"
+                            alt="Company Logo"
+                            width="150"
+                            height="100">    
+                    </figure>
+        <h2 id="top-of-page">Navigation</h2>
             <nav aria-label="Primary">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html"aria-current="page">About</a></li>
+                    <li><a href="about.html"aria-current="page" class="active">About</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
@@ -21,16 +28,27 @@
     </header>
     <main id="main-content">
         <section>
+            <h1>RIVERBEND YOGA STUDIO</h1>
+        </section>
+        <section>
+            <div class="grid-container">
+                <div class="card">
             <h2>Meet Our Instructors</h2>
-                <h3>David Vance (Yin & Hatha Specialist)</h3>
-                    <p>David believes yoga is for every single body, no matter your age or flexibility. With a background in somatic movement and mindfulness coaching, his classes focus on releasing deep joint tension and calming the nervous system. David guides students with a quiet, patient voice. He uses props generously and encourages everyone to honor where their body is today.</p>
-                <h3>Maya Lin (Lead Vinyasa Instructor)</h3>
-                    <p>Maya brings warmth, steady energy, and creative sequencing to every class. She completed her 500-hour training in Costa Rica and focuses on linking mindful movement with deep, rhythmic breathing. Her classes challenge your physical edge while keeping the atmosphere light and supportive. Expect a dynamic flow, great music, and a safe space to try something new.</p>
-                <h3>Elena Rostova (All-Levels Instructor)</h3>
-                    <p>Elena discovered yoga over a decade ago as a way to manage stress from a fast-paced corporate job. Now, she loves helping others find that same sense of grounded relief on the mat. Her teaching style blends alignment-focused alignment with an accessible, friendly approach. Elena wants every student to walk out the door feeling stronger, taller, and a little more at peace.</p>
+                <hgroup>
+                    <h3>David Vance (Yin & Hatha Specialist)</h3>
+                        <p>David believes yoga is for every single body, no matter your age or flexibility. With a background in somatic movement and mindfulness coaching, his classes focus on releasing deep joint tension and calming the nervous system. David guides students with a quiet, patient voice. He uses props generously and encourages everyone to honor where their body is today.</p>
+                </hgroup>
+                <hgroup>
+                    <h3>Maya Lin (Lead Vinyasa Instructor)</h3>
+                        <p>Maya brings warmth, steady energy, and creative sequencing to every class. She completed her 500-hour training in Costa Rica and focuses on linking mindful movement with deep, rhythmic breathing. Her classes challenge your physical edge while keeping the atmosphere light and supportive. Expect a dynamic flow, great music, and a safe space to try something new.</p>
+                </hgroup>
+                <hgroup>    
+                    <h3>Elena Rostova (All-Levels Instructor)</h3>
+                        <p>Elena discovered yoga over a decade ago as a way to manage stress from a fast-paced corporate job. Now, she loves helping others find that same sense of grounded relief on the mat. Her teaching style blends alignment-focused alignment with an accessible, friendly approach. Elena wants every student to walk out the door feeling stronger, taller, and a little more at peace.</p>
+                </hgroup>
             <figure>
-                <figcaption>Maya Lin (Lead Vinyasa Instructor)</figcaption>
-                <img 
+                <figcaption><h4>Maya Lin (Lead Vinyasa Instructor)</h4></figcaption>
+                    <img 
                         src="/media/yoga-instructor_c.png"
                         alt="Our instructer Maya Lin, shes always smiling and welcoming to all that come."
                         width="500"
@@ -38,44 +56,103 @@
             </figure>  
         </section>
         <section>
+            <div class="grid-container">
+                <div class="card">
             <h2>Studio Accessibility Features</h2>
-                <ul>
-                    <li>Physical Space: Accessible ramps, wide doorways, a zero-step main entry, and a fully ADA-compliant bathroom.</li>
-                    <li>Prop Support: Complimentary access to visual and physical modifications, including height-adjustable chairs, extra-firm blocks, yoga wheel props, and support straps.</li>
-                    <li>Class Modifications: Trained instructors who offer explicit verbal cues for variations, seated options, and trauma-informed adjustments.</li>
-                    <li>Sensory Choices: Soft, dimmable lighting, fragrance-free spaces, and designated quiet areas to support neurodivergent or sensory-sensitive practitioners.</li>
-                </ul>
+                <hgroup>
+                    <ul>
+                        <li><h3>Physical Space</h3>
+                                <ul>
+                                    <li>Accessible ramps, wide doorways, a zero-step main entry, and a fully ADA-compliant bathroom.</li>
+                                </ul>
+                        </li>
+                </hgroup>
+                <hgroup>
+                        <li><h3>Prop Support</h3>
+                                <ul>
+                                    <li>Complimentary access to visual and physical modifications, including height-adjustable chairs, extra-firm blocks, yoga wheel props, and support straps.</li>
+                                </ul>
+                        </li>
+                </hgroup>        
+                <hgroup>
+                        <li><h3>Class Modifications</h3>
+                                <ul>
+                                    <li>Trained instructors who offer explicit verbal cues for variations, seated options, and trauma-informed adjustments.</li>
+                                </ul>
+                        </li>
+                </hgroup>        
+                <hgroup>
+                        <li><h3>Sensory Choices</h3>
+                                <ul>
+                                    <li>Soft, dimmable lighting, fragrance-free spaces, and designated quiet areas to support neurodivergent or sensory-sensitive practitioners.</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </hgroup>
+                <figcaption><h4>Inclusive To All</h4></figcaption>
+                <img 
+                    src="/media/yoga-workshop_c.png"
+                    alt="Diverse and content participants being led by an instructor"
+                    width="600"
+                    height="400">     
         </section>
         <section>
-            <h2>Studio Policies and Guidelines</h2>
-                <ul>
-                    <li>Booking & Attendance
-                        <ul>
-                            <li>Pre-Registration Required: We highly recommend booking your class online or via our app ahead of time to secure your mat space.</li>
-                            <li>Late Arrival Policy: Classes start exactly on time. For safety and to prevent disruption, the studio doors lock when class begins. Late arrivals will not be permitted to enter or practice.</li>
-                            <li>Cancellation Policy: You must cancel your reservation at least 2 hours before class starts. Failure to do so will result in a lost class credit (for class pack holders) or a $10 late-cancel fee (for unlimited members).</li>
-                        </ul>
-                    </li>
-                    <li>Studio Etiquette
-                        <ul>
-                            <li>Device-Free Zone: All cell phones, smartwatches, and electronics must be completely silenced and left in the designated locker/storage cubbies. No phones are permitted on the practice floor.</li>
-                            <li>Fragrance & Scents: Out of respect for students with allergies and respiratory sensitivities, please refrain from wearing heavy perfumes, colognes, or strongly scented body lotions.</li>
-                            <li>Footwear: Please remove your shoes immediately upon entering the studio lobby. Shoes are not permitted inside the practice rooms.</li>
-                        </ul>
-                    </li>
-                    <li>Safety & Hygiene
-                        <ul>
-                            <li>Clean Gear: Students are welcome to bring their own mats or use studio-provided mats. All studio props and mats must be thoroughly wiped down with our plant-based disinfectant sprays after use.</li>
-                            <li>Health & Injuries: Please inform your instructor before class starts if you are pregnant, managing an injury, or have any medical conditions so they can offer safe modifications.</li>
-                        </ul>
-                    </li>
-                    <li>Memberships & Purchases
-                        <ul>
-                            <li>Refund Policy: All sales are final. Class packages, memberships, workshops, and retail items are non-refundable and non-transferable.</li>
-                            <li>Membership Pauses: Monthly unlimited auto-renew members can pause their membership once per calendar year for up to 30 days. Pause requests must be submitted via email at least 7 days before your next billing cycle.</li>
-                        </ul>
-                    </li>
-                </ul>
+            <div class="grid-container">
+                <div class="card">
+            <h2>Studio Policies and Guidelines</h2>        
+                <hgroup>
+                    <ul>
+                        <li><h3>Booking & Attendance</h3>
+                            <ul>
+                                <li class="bold">Pre-Registration Required</li>
+                                    <p>- We highly recommend booking your class online or via our app ahead of time to secure your mat space.</p>
+                                <li class="bold">Late Arrival Policy</li>
+                                    <p>- Classes start exactly on time.</p>
+                                    <p>- For safety and to prevent disruption, the studio doors lock when class begins.</p>
+                                    <p>- Late arrivals will not be permitted to enter or practice.</p>
+                                <li class="bold">Cancellation Policy</li>
+                                    <p>- You must cancel your reservation at least 2 hours before class starts.</p>
+                                    <p>- Failure to do so will result in a lost class credit (for class pack holders) or a $10 late-cancel fee (for unlimited members).</p>
+                            </ul>
+                        </li>
+                </hgroup>        
+                <hgroup>
+                        <li><h3>Studio Etiquette</h3>
+                            <ul>
+                                <li class="bold">Device-Free Zone</li>
+                                    <p>- All cell phones, smartwatches, and electronics must be completely silenced and left in the designated locker/storage cubbies.</p>
+                                    <p>- No phones are permitted on the practice floor.</p>
+                                <li class="bold">Fragrance & Scents</li>
+                                    <p>- Out of respect for students with allergies and respiratory sensitivities, please refrain from wearing heavy perfumes, colognes, or strongly scented body lotions.</p>
+                                <li class="bold">Footwear</li>
+                                    <p>- Remove your shoes immediately upon entering the studio lobby.</p>
+                                    <p>- Shoes are not permitted inside the practice rooms.</p>
+                            </ul>
+                        </li>
+                </hgroup>        
+                <hgroup>
+                        <li><h3>Safety & Hygiene</h3>
+                            <ul>
+                                <li class="bold">Clean Gear</li>
+                                    <p>- Students are welcome to bring their own mats or use studio-provided mats.</p>
+                                    <p>- All studio props and mats must be thoroughly wiped down with our plant-based disinfectant sprays after use.</p>
+                                <li class="bold">Health & Injuries</li>
+                                    <p>- Please inform your instructor before class starts if you are pregnant, managing an injury, or have any medical conditions so they can offer safe modifications.</p>
+                            </ul>
+                        </li>
+                </hgroup>        
+                <hgroup>
+                        <li><h3>Memberships & Purchases</h3>
+                            <ul>
+                                <li class="bold">Refund Policy</li>
+                                    <p>- All sales are final.</p>
+                                    <p>- Class packages, memberships, workshops, and retail items are non-refundable and non-transferable.</p>
+                                <li class="bold">Membership Pauses</li>
+                                    <p>- Monthly unlimited auto-renew members can pause their membership once per calendar year for up to 30 days.</p>
+                                    <p>- Pause requests must be submitted via email at least 7 days before your next billing cycle.</p>
+                            </ul>
+                        </li>
+                </hgroup>                
             </section>
     </main>
     <footer>
@@ -83,13 +160,13 @@
             <nav aria-label="Footer">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="about.html" aria-current="page" class="active">About</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
             </nav>
                 <figure>
-                    <img 
+                    <img class="img"
                         src="/media/yoga-logo_c.png"
                         alt="Company Logo"
                         width="150"
