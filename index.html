@@ -167,5 +167,48 @@
             <p>&copy; 2026 Riverbend Yoga Studio</p>
         <a href="#top-of-page" aria-label="Footer">Jump to Top</a>
     </footer>
+    <script>
+    const form = document.getElementById("request");
+    const firstnameinput = document.getElementById("first-name");
+    const lastnameinput = document.getElementById("last-name");
+    const emailinput = document.getElementById("email-address");
+    const phonenumberinput = document.getElementById("phone-number");
+    const messageinput = document.getElementById("text-area");
+
+
+    window.addEventListener("DOMContentLoaded", () => {
+        const saveddata = sessionStorage.getItem("form-draft");
+        
+        if (saveddata) {
+            const data = JSON.parse(saveddata);
+            firstnameinput.value = data.fname || '';
+            lastnameinput.value = data.lname || '';
+            emailinput.value = data.emailaddress || '';
+            phonenumberinput.value = data.phonenumber || '';
+            messageinput.value = data.message || '';
+            showStatus("Draft Recovered!");
+        }
+    });
+
+
+    form.addEventListener("input", () => {
+        const formdata = {
+            fname: firstnameinput.value,
+            lname: lastnameinput.value,
+            emailaddress: emailinput.value,
+            phonenumber: phonenumberinput.value,
+            message: messageinput.value
+        };
+
+        sessionStorage.setItem('form-draft', JSON.stringify(formdata));
+        showStatus('Saving progress...');
+    });
+
+
+    let timer;
+    function showStatus(text) {
+        console.log(text);
+    }
+</script>
 </body>
 </html>
