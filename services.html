@@ -82,7 +82,7 @@
                 <p>Whether you are completely new to the mat, managing an injury, or looking to deepen your existing practice, our 1-on-1 private sessions are fully tailored to your unique goals. You will work directly with an expert instructor in a quiet, private setting to break down foundational alignments, build custom flows, and move at the exact pace your body needs. Fill out the request form below to schedule your personalized session.</p>
             </hgroup>
     
-        <form action="/private-session-requests/" method="post">
+        <form id="request" action="/private-session-requests/" method="post">
             <fieldset>
                     <hgroup>
                         <fieldset>
@@ -103,7 +103,8 @@
                                     <select id="contact-method" name="preferred-contact-method" required>
                                         <option value="">--Select--</option>
                                         <option value="email">Email</option>
-                                        <option value="phone">Phone</option>
+                                        <option value="call">Call</option>
+                                        <option value="text">Text</option>
                                     </select>
                                 </label>
                         </fieldset>
@@ -155,7 +156,7 @@
                                 </label>
                                 <label for="textarea">Aspirations:
                                     <textarea
-                                        id="textarea" 
+                                        id="text-area" 
                                         name="description" 
                                         rows="5" 
                                         cols="40"
