@@ -73,6 +73,11 @@ function handleAppointmentSubmit(event) {
     return;
   }
 
+  if (!appointmentdata.phonenumber) {
+    alert("Please enter a phone number");
+    return;
+  }
+
   if (!appointmentdata.contactmethod || !appointmentdata.instructor) {
     alert("Please select a Preferred Contact Method and Instructor.");
     return;
