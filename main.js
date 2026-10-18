@@ -73,12 +73,12 @@ function handleAppointmentSubmit(event) {
     return;
   }
 
-  if (appointmentdata.contactmethod === "--Select--" || appointmentdata.instructor === "-- Select an Instructor --") {
+  if (!appointmentdata.contactmethod || !appointmentdata.instructor) {
     alert("Please select a Preferred Contact Method and Instructor.");
     return;
   }
 
-  if (!appointmentdata.bookingdate || appointmentdata.bookingtime === "Select a time...") {
+  if (!appointmentdata.bookingdate || !appointmentdata.bookingtime) {
     alert("Please choose a Date and Time.");
     return;
   }
@@ -89,7 +89,7 @@ function handleAppointmentSubmit(event) {
   }
 
   console.log("Availability Request Submited", JSON.stringify(appointmentdata, null, 2));
-
+  alert("Success! Your availability request has been submitted.");
  
   sessionStorage.removeItem("form-draft");
 
