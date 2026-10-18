@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", () => {
     
     if (form) {
        
+      form.addEventListener("submit", handleAppointmentSubmit);
+
         const saveddata = sessionStorage.getItem("form-draft");
         if (saveddata) {
             const data = JSON.parse(saveddata);
@@ -67,7 +69,7 @@ function handleAppointmentSubmit(event) {
   }
 
   if (!appointmentdata.emailaddress.includes("@")) {
-    alert("Please enter a valid Email Address.");
+    alert("Please enter a valid email addrress");
     return;
   }
 
