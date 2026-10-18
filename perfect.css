@@ -233,6 +233,15 @@ main {
 .btn:hover {
     color: var(--color-header-text);}
 
+.yoga {
+    cursor: pointer;
+    display: block;
+}
+
+.yoga:hover {
+    transform: scale(1.02);
+}
+
 footer {
     text-align: center;
     padding: 2rem 1.5rem;
